@@ -77,6 +77,9 @@ var api = new ParseServer({
     //maxPasswordHistory: 5, // optional setting to prevent reuse of previous n passwords. Maximum value that can be specified is 20. Not specifying it or specifying 0 will not enforce history.
     //optional setting to set a validity duration for password reset links (in seconds)
     resetTokenValidityDuration: 24*60*60, // expire after 24 hours
+  },
+  customPages: {
+    choosePassword: 'https://location-reminder-server-pp.herokuapp.com/choose_password.html'
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
