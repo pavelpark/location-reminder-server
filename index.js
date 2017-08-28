@@ -79,10 +79,9 @@ var api = new ParseServer({
     resetTokenValidityDuration: 24*60*60, // expire after 24 hours
   },
   customPages: {
-    invalidLink: 'https://location-reminder-server-pp.herokuapp.com/invalid_link.html',
-    verifyEmailSuccess: 'https://location-reminder-server-pp.herokuapp.com/verify_email_success.html',
-    choosePassword: 'https://location-reminder-server-pp.herokuapp.com/choose_password.html',
-    passwordResetSuccess: 'https://location-reminder-server-pp.herokuapp.com/password_reset_success.html'
+    invalidLink: '/public/invalid_link.html',
+    choosePassword: '/public/choose_password.html',
+    passwordResetSuccess: '/public/password_reset_success.html'
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
