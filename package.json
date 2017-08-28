@@ -14,7 +14,7 @@
     "parse": "~1.8.0",
     "parse-server": "*",
     "parse-server-simple-mailgun-adapter": "*"
-  },
+    },
   "scripts": {
     "start": "node index.js"
   },

@@ -54,8 +54,7 @@ var api = new ParseServer({
       // Your domain from mailgun.com
       domain: 'mg.pavelpark.com',
       // Your API key from mailgun.com
-      apiKey: process.env.MG_API,
-    }
+      apiKey: process.env.MG_API
   },
 
   // account lockout policy setting (OPTIONAL) - defaults to undefined
@@ -77,12 +76,12 @@ var api = new ParseServer({
     //maxPasswordHistory: 5, // optional setting to prevent reuse of previous n passwords. Maximum value that can be specified is 20. Not specifying it or specifying 0 will not enforce history.
     //optional setting to set a validity duration for password reset links (in seconds)
     resetTokenValidityDuration: 24*60*60, // expire after 24 hours
-  },
-  customPages: {
-    invalidLink: '/public/invalid_link.html',
-    choosePassword: '/public/choose_password.html',
-    passwordResetSuccess: '/public/password_reset_success.html'
   }
+  // customPages: {
+  //   invalidLink: '/public/invalid_link.html',
+  //   choosePassword: '/public/choose_password.html',
+  //   passwordResetSuccess: '/public/password_reset_success.html'
+  // }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
